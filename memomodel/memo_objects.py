@@ -1,5 +1,5 @@
 import collections
-import h5db
+from memodb import h5db
 import enum
 import yaml
 import numpy
@@ -144,7 +144,7 @@ class TrainingResult(h5db.H5DBObject):
     test_data = h5db.Object
     metamodel = h5db.Blob
     score_r2 = h5db.Scalar
-    score_avg = h5db.Scalar
+    score_mae = h5db.Scalar
     score_hae = h5db.Scalar
     score_mse = h5db.Scalar
 
@@ -153,7 +153,7 @@ class TrainingResult(h5db.H5DBObject):
         self.test_data = None
         self.metamodel = None
         score_r2 = h5db.Scalar
-        score_avg = h5db.Scalar
+        score_mae = h5db.Scalar
         score_hae = h5db.Scalar
         score_mse = h5db.Scalar
         h5db.H5DBObject.__init__(self)

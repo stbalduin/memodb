@@ -1,5 +1,5 @@
-from h5db.core import H5DB, H5DBObject, H5AccessMode
-from h5db.core import Scalar, Vector, Matrix, List, DataFrame, Object, ObjectList, Blob
+from memodb.h5db.core import H5DB, H5DBObject, H5AccessMode
+from memodb.h5db.core import Scalar, Vector, Matrix, List, DataFrame, Object, ObjectList, Blob
 
 
 __version_info__ = ['0', '1']
